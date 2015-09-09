@@ -6,6 +6,7 @@
 /// <reference path="index.config.ts" />
 /// <reference path="index.run.ts" />
 /// <reference path="main/main.controller.ts" />
+/// <reference path="../app/main/aparelhos.controller.ts" />
 /// <reference path="../app/components/navbar/navbar.directive.ts" />
 /// <reference path="../app/components/malarkey/malarkey.directive.ts" />
 /// <reference path="../app/components/webDevTec/webDevTec.service.ts" />
@@ -18,7 +19,7 @@ declare var moment: moment.MomentStatic;
 module contadeluz {
   'use strict';
 
-  angular.module('contadeluz', ['ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap'])
+  angular.module('contadeluz', ['contadeluz.aparelhos', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap'])
     .constant('malarkey', malarkey)
     .constant('toastr', toastr)
     .constant('moment', moment)
