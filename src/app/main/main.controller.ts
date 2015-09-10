@@ -1,5 +1,5 @@
-/// <reference path="aparelhos.controller.ts" />
-module contadeluz {
+/// <reference path="devices.controller.ts" />
+module powerbill {
 	'use strict';
 
 	export class MainController {

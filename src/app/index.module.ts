@@ -6,7 +6,7 @@
 /// <reference path="index.config.ts" />
 /// <reference path="index.run.ts" />
 /// <reference path="main/main.controller.ts" />
-/// <reference path="../app/main/aparelhos.controller.ts" />
+/// <reference path="../app/main/devices.controller.ts" />
 /// <reference path="../app/components/navbar/navbar.directive.ts" />
 /// <reference path="../app/components/malarkey/malarkey.directive.ts" />
 /// <reference path="../app/components/webDevTec/webDevTec.service.ts" />
@@ -16,10 +16,10 @@ declare var malarkey: any;
 declare var toastr: Toastr;
 declare var moment: moment.MomentStatic;
 
-module contadeluz {
+module powerbill {
   'use strict';
 
-  angular.module('contadeluz', ['contadeluz.aparelhos', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap'])
+  angular.module('powerbill', ['powerbill.devices', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap'])
     .constant('malarkey', malarkey)
     .constant('toastr', toastr)
     .constant('moment', moment)

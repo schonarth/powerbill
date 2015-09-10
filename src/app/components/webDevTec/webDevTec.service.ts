@@ -1,4 +1,4 @@
-module contadeluz {
+module powerbill {
   'use strict';
 
   export interface ITecThing {

@@ -1,4 +1,4 @@
-module contadeluz {
+module powerbill {
   'use strict';
 
   interface IProjectsScope extends ng.IScope {
