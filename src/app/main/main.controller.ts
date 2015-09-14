@@ -1,4 +1,3 @@
-/// <reference path="devices.controller.ts" />
 module powerbill {
 	'use strict';
 
