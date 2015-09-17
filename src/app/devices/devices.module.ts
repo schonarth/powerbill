@@ -4,6 +4,7 @@
 /// <reference path="devices.config.ts" />
 /// <reference path="devices.run.ts" />
 /// <reference path="devices.service.ts" />
+/// <reference path="devices.controller.ts" />
 
 module powerbill.devices {
   'use strict';
@@ -11,5 +12,6 @@ module powerbill.devices {
   angular.module('powerbill.devices', [])
     .config(DevicesConfig)
     .run(DevicesRun)
-    .service('DevicesService', DevicesService);
+    .service('DevicesService', DevicesService)
+    .controller('DevicesController', DevicesController);
 }

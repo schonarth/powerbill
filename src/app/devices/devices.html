@@ -1,0 +1,34 @@
+<div class="container">
+	<div class="jumbotron">
+		<h1>Devices</h1>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-3" ng-class="{'hidden-xs': !!editing}">
+			<div ng-repeat="device in deviceTemplates">
+				<button class="btn btn-lg btn-block btn-primary" ng-click="showTemplate(this.device)">
+					<span class="glyphicon glyphicon-plus"/>
+					{{device.name}}
+				</button>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-9">
+			<div class="row" ng-show="editing">
+				<div class="col-xs-12 col-sm-10">
+					<pre>{{editing}}</pre>
+				</div>
+				<div class="col-xs-12 col-sm-2">
+					<button class="btn btn-lg btn-block btn-success" ng-click="showTemplate(this.device)">
+						<span class="glyphicon glyphicon-ok" title="Salvar"/>
+						<span class="sr-only">Salvar</span>
+					</button>
+					<button class="btn btn-lg btn-block btn-danger" ng-click="showTemplate(this.device)">
+						<span class="glyphicon glyphicon-remove" title="Cancelar"/>
+						<span class="sr-only">Cancelar</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
