@@ -1,11 +1,12 @@
 module powerbill.devices {
 	'use strict';
 
-    // TODO: REMOVER essa praga (FDCastel)
 	export interface IDevicesScope extends ng.IScope {
 		deviceTemplates: IDeviceTemplate[];
-		editing: IDeviceTemplate;
+		editing: Device;
 		showTemplate: any;
+		editDevice: any;
+		removeDevice: any;
 	}
 
 	export interface IDeviceTemplate {

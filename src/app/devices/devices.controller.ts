@@ -15,9 +15,14 @@ module powerbill.devices {
       $scope.deviceTemplates = DevicesService.getDevices();
       $log.debug('Got', $scope.deviceTemplates);
 
-      $scope.showTemplate = function(template: any) {
-        $log.debug('Editing', template);
-        $scope.editing = angular.copy(template);
+      $scope.showTemplate = function(template: IDeviceTemplate) {
+        $log.debug('Creating', template);
+        $scope.editing = new Device(template);
+      };
+
+      $scope.edit = function(device: Device) {
+        $log.debug('Editing', device);
+        $scope.editing = device;
       };
     }
     //DevicesService.getDevices();
