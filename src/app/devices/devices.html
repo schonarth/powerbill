@@ -41,15 +41,24 @@
 					</form>
 				</div>
 				<div class="col-xs-12 col-sm-2">
-					<button class="btn btn-lg btn-block btn-success" ng-click="showTemplate(this.device)">
-						<span class="glyphicon glyphicon-ok" title="Salvar"/>
-						<span class="sr-only">Salvar</span>
+					<button class="btn btn-lg btn-block btn-success" ng-click="saveDevice()">
+						<span class="glyphicon glyphicon-ok" title="Save"/>
+						<span class="sr-only">Save</span>
 					</button>
-					<button class="btn btn-lg btn-block btn-danger" ng-click="showTemplate(this.device)">
-						<span class="glyphicon glyphicon-remove" title="Cancelar"/>
-						<span class="sr-only">Cancelar</span>
+					<button class="btn btn-lg btn-block btn-danger" ng-click="removeDevice()">
+						<span class="glyphicon glyphicon-remove" title="Cancel"/>
+						<span class="sr-only">Cancel</span>
 					</button>
 				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-3" ng-class="{'hidden-xs': !!editing}">
+			<div ng-repeat="device in devicesSet">
+				<button class="btn btn-lg btn-block btn-warning" ng-click="showTemplate(this.device)">
+					<span class="glyphicon glyphicon-pencil"/>
+					{{device.name}} ${{device.getConsumption()}}
+				</button>
 			</div>
 		</div>
 	</div>

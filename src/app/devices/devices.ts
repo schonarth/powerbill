@@ -3,10 +3,16 @@ module powerbill.devices {
 
 	export interface IDevicesScope extends ng.IScope {
 		deviceTemplates: IDeviceTemplate[];
+		devicesSet: IDevicesSet;
 		editing: Device;
 		showTemplate: any;
 		editDevice: any;
 		removeDevice: any;
+		saveDevice: any;
+	}
+
+	interface IDevicesSet {
+		[index: string]: Device;
 	}
 
 	export interface IDeviceTemplate {
@@ -25,9 +31,11 @@ module powerbill.devices {
 				hours: t.defaultHoursOn,
 				minutes: 0
 			};
+			this.timestamp = Date.now();
 		}
 
 		name: string;
+		timestamp: number;
 		potency: number;
 		quantity: number;
 		timeOn: {
@@ -36,7 +44,7 @@ module powerbill.devices {
 			minutes: number
 		};
 
-		private consumption: number;
+		consumption: number;
 
 		calculateConsumption(): void {
 			var tempo = (this.timeOn.days * (this.timeOn.hours + (this.timeOn.minutes / 60)));
