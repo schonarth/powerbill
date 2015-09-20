@@ -3,24 +3,22 @@ module powerbill.devices {
 
   export class DevicesService {
 
-    //static $inject = ['$log'];
     public $log: ng.ILogService;
+    public $resource: ng.resource.IResourceService;
 
     /* @ngInject */
-    constructor(_$log_: ng.ILogService) {
+    constructor(_$log_: ng.ILogService, _$resource_: ng.resource.IResourceService) {
       this.$log = _$log_;
-    } // */
+      this.$resource = _$resource_;
+    }
 
-    getDevices = function(): IDeviceTemplate[] {
-      var devices: IDeviceTemplate[] = [];
+    /* @ngInject */
+    getDevices = function(): ng.IPromise<IDeviceTemplate[]> {
+      //var devices: IDeviceTemplate[] = [];
+
+      var devices = this.$resource('app/devices/device-templates.json');
       this.$log.debug('Getting device templates...', devices);
-      devices.push({
-        name: 'Air conditioner',
-        defaultPotency: 1400,
-        defaultHoursOn: 0
-      });
 
-      this.$log.debug('Returning device templates...', devices);
       return devices;
     }
 

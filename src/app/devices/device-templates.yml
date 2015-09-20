@@ -1,0 +1,384 @@
+-
+  name:
+    ptbr: Ar Condicionado
+  potency: 1400
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Aspirador de Pó
+  potency: 600
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Batedeira
+  potency: 180
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Cafeteira
+  potency: 1000
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Carregador de Celular
+  potency: 15
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Chuveiro
+  potency: 4400
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Computador
+  potency: 200
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Cortador de Grama
+  potency: 600
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Depilador
+  potency: 150
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Ebulidor
+  potency: 1100
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Enceradeira
+  potency: 250
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Fax
+  potency: 10
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Ferro de Passar
+  potency: 1000
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Fogão Elétrico
+  potency: 1500
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Forno Elétrico
+  potency: 1500
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Freezer
+  potency: 170
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Furadeira
+  potency: 480
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Geladeira
+  potency: 190
+  timeOn:
+    days: 30
+    hours: 16
+    minutes: 0
+-
+  name:
+    ptbr: Impressora
+  potency: 25
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Lâmpada Inc. 100w
+  potency: 100
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Lâmpada Inc. 60w
+  potency: 60
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Lâmpada Flu. 40w
+  potency: 40
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Lâmpada Flu. 20w
+  potency: 20
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Lavadora de Roupa
+  potency: 1000
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Lavadora de Louça
+  potency: 1400
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Liquidificador
+  potency: 30
+  timeOn:
+    days: 300
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Máquina de Costura
+  potency: 100
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Microondas
+  potency: 1500
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Micro System
+  potency: 15
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Mini System
+  potency: 220
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Nebulizador
+  potency: 20
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Rádio Relógio
+  potency: 5
+  timeOn:
+    days: 30
+    hours: 24
+    minutes: 0
+-
+  name:
+    ptbr: Repelente Elétrico
+  potency: 5
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Sanduicheira
+  potency: 750
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Sauna
+  potency: 15000
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Secadora
+  potency: 3500
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Secador de Cabelo
+  potency: 1000
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Secadora de Roupas
+  potency: 3500
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Secretária Eletrônica
+  potency: 10
+  timeOn:
+    days: 30
+    hours: 24
+    minutes: 0
+-
+  name:
+    ptbr: Serra Tico-Tico
+  potency: 380
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Tanquinho
+  potency: 270
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Telefone Sem Fio
+  potency: 5
+  timeOn:
+    days: 30
+    hours: 24
+    minutes: 0
+-
+  name:
+    ptbr: Televisão
+  potency: 150
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Torneira Elétrica
+  potency: 4400
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Ventilador
+  potency: 80
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Vídeo Cassete
+  potency: 30
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Vídeo Game
+  potency: 20
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0
+-
+  name:
+    ptbr: Outros
+  potency: 0
+  timeOn:
+    days: 30
+    hours: 0
+    minutes: 0

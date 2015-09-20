@@ -2,6 +2,7 @@
 
 var path = require('path');
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var conf = require('./conf');
 
 var $ = require('gulp-load-plugins')({
@@ -91,4 +92,16 @@ gulp.task('clean', ['tsd:purge'], function (done) {
   $.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/')], done);
 });
 
-gulp.task('build', ['html', 'fonts', 'other']);
+gulp.task('yaml', function() {
+  var yaml = require('gulp-yaml');
+  return gulp.src('./src/**/*.yml')
+    .pipe(yaml())
+    .on('data', function(file) {
+      gutil.log('The converted file from YAML to JSON is: ' + gutil.colors.bgYellow.bold.black(file.contents));
+      gutil.log(gutil.colors.yellow('**** The file has also been written to ./dist directory ****'))
+    })
+    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./.tmp/serve'));
+});
+
+gulp.task('build', ['html', 'fonts', 'other', 'yaml']);

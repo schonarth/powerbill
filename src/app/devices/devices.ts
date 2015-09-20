@@ -15,24 +15,29 @@ module powerbill.devices {
 		[index: string]: Device;
 	}
 
-	export interface IDeviceTemplate {
+	export interface IDeviceTemplate extends ng.resource.IResource<IDeviceTemplate> {
 		name: string;
-		defaultPotency: number;
-		defaultHoursOn: number;
+		potency: number;
+		timeOn: {
+			days: number;
+			hours: number;
+			minutes: number;
+		};
+
 	}
 
 	export class Device {
 		constructor(t: IDeviceTemplate) {
-	//			console.debug("Instanciando" t);
-			this.name = t.name;
-			this.potency = t.defaultPotency;
-			this.timeOn = {
-				days: 0,
-				hours: t.defaultHoursOn,
-				minutes: 0
-			};
+			console.debug('Instanciando', t);
+			this.name = t.name[this.language];
+			this.potency = t.potency;
+			this.timeOn = t.timeOn;
 			this.timestamp = Date.now();
 		}
+
+		// TODO: use parameterized value
+		language: string = 'ptbr';
+		$log: ng.ILogService;
 
 		name: string;
 		timestamp: number;
@@ -41,17 +46,17 @@ module powerbill.devices {
 		timeOn: {
 			days: number;
 			hours: number;
-			minutes: number
+			minutes: number;
 		};
 
 		consumption: number;
 
 		calculateConsumption(): void {
-			var tempo = (this.timeOn.days * (this.timeOn.hours + (this.timeOn.minutes / 60)));
+			var timeOn = (this.timeOn.days * (this.timeOn.hours + (this.timeOn.minutes / 60)));
 			var kwh = this.potency * this.quantity;
-			var consumption = kwh * tempo / 1000;
+			var consumption = kwh * timeOn / 1000;
 
-			// console.debug(kwh, tempo, consumption);
+			console.debug('Calculating %s consumption: %s kwh @ %s hours/month = %s', this.name, kwh, timeOn, consumption);
 
 			this.consumption = consumption;
 		}

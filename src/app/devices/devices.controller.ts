@@ -12,7 +12,7 @@ module powerbill.devices {
 
     /** @ngInject */
     constructor ($scope: IDevicesScope, $log: ng.ILogService, DevicesService: any) {
-      $scope.deviceTemplates = DevicesService.getDevices();
+      $scope.deviceTemplates = DevicesService.getDevices().query();
       $scope.devicesSet = {};
       $log.debug('Got', $scope.deviceTemplates);
 
