@@ -5,6 +5,7 @@ module powerbill.devices {
 		deviceTemplates: IDeviceTemplate[];
 		devicesSet: IDevicesSet;
 		editing: Device;
+		total: number;
 		showTemplate: any;
 		editDevice: any;
 		removeDevice: any;
@@ -32,6 +33,7 @@ module powerbill.devices {
 			this.name = t.name[this.language];
 			this.potency = t.potency;
 			this.timeOn = t.timeOn;
+			this.quantity = 1;
 			this.timestamp = Date.now();
 		}
 

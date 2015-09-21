@@ -30,12 +30,21 @@ module powerbill.devices {
         $scope.editing.calculateConsumption();
         $scope.devicesSet[$scope.editing.timestamp] = $scope.editing;
         delete $scope.editing;
+        updateTotal();
       };
 
       $scope.removeDevice = function(device: Device) {
         delete $scope.devicesSet[$scope.editing.timestamp];
         delete $scope.editing;
       };
+
+      function updateTotal() {
+        var sum = 0;
+        for (var i in $scope.devicesSet) {
+          sum += $scope.devicesSet[i].getConsumption();
+        }
+        $scope.total = sum;
+      }
     }
     //DevicesService.getDevices();
 
