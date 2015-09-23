@@ -17,7 +17,7 @@ module powerbill.devices {
       $log.debug('Got', $scope.deviceTemplates);
 
       $scope.showTemplate = function(template: IDeviceTemplate) {
-        $scope.editing = new Device(template);
+        $scope.editing = new Device(angular.copy(template));
         $log.debug('Creating %o from %o', $scope.editing, template);
       };
 
